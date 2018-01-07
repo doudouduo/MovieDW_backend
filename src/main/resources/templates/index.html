@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <!-- Bootstrap Styles-->
+    <link th:href="@{assets/css/bootstrap.css}" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link th:href="@{assets/css/font-awesome.css}" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link th:href="@{assets/js/morris/morris-0.4.3.min.css}" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link th:href="@{assets/css/custom-styles.css}" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- Table Expand Styles-->
+    <link rel="stylesheet" th:href="@{assets/css/bootstrap-table-expandable.css}" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" th:href="@{/}">Movie</a>
+            </div>
+        </nav>
+        <!--/. NAV TOP  -->
+
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li><a href="time.html"><i class="fa fa-dashboard"></i> 按时间查找 </a></li>
+                    <li><a href="name.html"><i class="fa fa-desktop"></i> 按名称查找 </a></li>
+                    <li><a href="director.html"><i class="fa fa-bar-chart-o"></i> 按导演查找 </a></li>
+                    <li><a href="actor.html"><i class="fa fa-qrcode"></i> 按演员查找 </a></li>
+                    <li><a href="type.html"><i class="fa fa-table"></i> 按类别查找 </a></li>
+                    <li><a href="combine.html"><i class="fa fa-edit"></i> 组合查询 </a></li>
+                    <li><a href="search.html"><i class="fa fa-sitemap"></i> 词频统计 </a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                            电影查询与统计 <small>数据仓库课设</small>
+                        </h1>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-green">
+                            <div class="panel-body">
+                                <i class="fa fa-bar-chart-o fa-5x"></i>
+                                <h3>250000</h3>
+                            </div>
+                            <div class="panel-footer back-footer-green">
+                                Movies
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <i class="fa fa-shopping-cart fa-5x"></i>
+                                <h3>52,160</h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+                                DVDs
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-red">
+                            <div class="panel-body">
+                                <i class="fa fa fa-comments fa-5x"></i>
+                                <h3>250000</h3>
+                            </div>
+                            <div class="panel-footer back-footer-red">
+                                Reviews
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-brown">
+                            <div class="panel-body">
+                                <i class="fa fa-users fa-5x"></i>
+                                <h3>36,752</h3>
+                            </div>
+                            <div class="panel-footer back-footer-brown">
+                                Users
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /. PAGE INNER  -->
+            <footer><p id="footer">All Rights Reserved | Design by LiHang</p></footer>
+            <!-- /.FOOTER -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script th:src="@{assets/js/jquery-1.10.2.js}"></script>
+    <!-- Bootstrap Js -->
+    <script th:src="@{assets/js/bootstrap.min.js}"></script>
+    <!-- Metis Menu Js -->
+    <script th:src="@{assets/js/jquery.metisMenu.js}"></script>
+    <!-- Morris Chart Js -->
+    <script th:src="@{assets/js/morris/raphael-2.1.0.min.js}"></script>
+    <script th:src="@{assets/js/morris/morris.js}"></script>
+    <!-- Table Expand Js -->
+    <script th:src="@{assets/js/bootstrap-table-expandable.js}"></script>
+    <!-- Custom Js -->
+    <script th:src="@{assets/js/custom-scripts.js}"></script>
+
+
+</body>
+
+</html>
